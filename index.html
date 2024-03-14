@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <title>Recipe Website</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Recipe Website!</h1>
+      <img src="banner.jpg" alt="Recipe Website Banner" width="100%" height="auto">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/recipe_main.html">Recipes</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/login.html">Log In</a></li>
+        </ul>
+      </nav>
+      <form action="/search" method="get">
+        <input type="search" name="q" placeholder="Search for recipes...">
+        <button type="submit">Search</button>
+      </form>
+      <nav>
+        <form action="/login" method="post">
+          <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username" required><br>
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" required><br>
+          <button type="submit">Sign In/Log In</button>
+        </form>
+      </nav>
+      <nav>
+        <p style="text-align: left;">Don't have an account? <a href="/signup.html">Sign up here</a>.</p>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Top 3 Recipes</h2>
+        <ul style="display: flex; justify-content: center; list-style: none; padding: 0;">
+          <li style="text-align: center;">
+            <h3>Recipe 1</h3>
+            <p>Description of Recipe 1...</p>
+            <a href="/recipes/recipe1">View Recipe 1</a>
+          </li>
+          <li style="text-align: center;">
+            <h3>Recipe 2</h3>
+            <p>Description of Recipe 2...</p>
+            <a href="/recipes/recipe2">View Recipe 2</a>
+          </li>
+          <li style="text-align: center;">
+            <h3>Recipe 3</h3>
+            <p>Description of Recipe 3...</p>
+            <a href="/recipes/recipe3">View Recipe 3</a>
+          </li>
+        </ul>
+        
+      </section>
+    </main>
+  </body>
+</html>

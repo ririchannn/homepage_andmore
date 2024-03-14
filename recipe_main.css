@@ -1,0 +1,17 @@
+.meal {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .meal img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .meal-title {
+    text-align: center;
+    margin-top: 5px;
+  }
